@@ -8,7 +8,18 @@
       "Bash(cp:*)",
       "Bash(npm install:*)",
       "Bash(npx prisma:*)",
-      "Bash(npx shadcn@latest init --yes --defaults)"
+      "Bash(npx shadcn@latest init --yes --defaults)",
+      "Bash(mkdir -p \"/Users/ludovic.royo/Documents/Claude/CS2 MarketPlace/src/app/\\(auth\\)/login\")",
+      "Bash(mkdir -p \"/Users/ludovic.royo/Documents/Claude/CS2 MarketPlace/src/app/\\(auth\\)/register\")",
+      "Bash(mkdir -p \"/Users/ludovic.royo/Documents/Claude/CS2 MarketPlace/src/app/\\(dashboard\\)/dashboard\")",
+      "Bash(mkdir -p \"/Users/ludovic.royo/Documents/Claude/CS2 MarketPlace/src/app/\\(dashboard\\)/scanner\")",
+      "Bash(mkdir -p \"/Users/ludovic.royo/Documents/Claude/CS2 MarketPlace/src/app/\\(dashboard\\)/settings\")",
+      "Bash(npm run:*)",
+      "Bash(\"/Users/ludovic.royo/Documents/Claude/CS2 MarketPlace/node_modules/next/dist/bin/next\" --version 2>&1)",
+      "Bash(node:*)",
+      "Bash(node_modules/.bin/next build:*)",
+      "Bash(find '/Users/ludovic.royo/Documents/Claude/CS2 MarketPlace/node_modules' -path */.prisma/client* -name *.d.ts)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\(''''exports'''',{}\\), indent=2\\)\\)\")"
     ]
   }
 }

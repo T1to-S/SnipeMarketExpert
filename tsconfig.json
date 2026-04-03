@@ -19,7 +19,10 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      ".prisma/client/default": ["./node_modules/.prisma/client/default"],
+      ".prisma/client/index": ["./node_modules/.prisma/client/index"],
+      ".prisma/client/edge": ["./node_modules/.prisma/client/edge"]
     }
   },
   "include": [
