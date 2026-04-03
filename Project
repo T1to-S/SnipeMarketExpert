@@ -1,0 +1,81 @@
+🎯 CS2 Skin Sniper — SaaS
+
+Real-time skin scanner, cross-marketplace arbitrage detector & automated buying bot for CS2.
+
+
+🚀 What is this?
+CS2 Skin Sniper is a SaaS platform built to give traders a serious edge on the CS2 skin market.
+It scans multiple resale marketplaces every few seconds, surfaces underpriced items, and (eventually) pulls the trigger automatically — so you don't have to.
+This project is a work in progress built by a solo dev who believes the idea is worth pursuing.
+If you're an experienced developer and this catches your eye — I'm open to collaborators, mentors, or just a good conversation. Let's build something.
+
+🗺️ Roadmap
+Phase 1 — Smart Scanner & Sniper
+
+Real-time scan of CS2 marketplaces (CSFloat, Skinport, DMarket, Buff163, Steam…)
+Configurable scan interval per user
+Ultra-granular item filters:
+
+Float value (exact range)
+Pattern / Seed ID
+Phase (Doppler, Case Hardened blue gems, Fade %)
+Sticker presence, position, wear & value
+StatTrak / Souvenir toggle
+Price range (min/max)
+
+
+Instant alerts: Discord webhook, email, in-app notification
+Full history dashboard of found listings
+
+Phase 2 — Cross-Marketplace Arbitrage
+
+Real-time price comparison across all major platforms
+Automatic net profit calculation (buy price + platform fees + CSFloat fees + liquidity buffer)
+Deal score based on: deviation from median price, estimated resale speed, historical volume
+"Live opportunities" view sorted by ROI
+Price history charts per item
+Reference pricing via Pricempire / Steam Analyst
+
+Phase 3 — Automated Buying Bot
+
+Semi-automatic bot with randomized delay (purchase triggered +20 to +45s after detection)
+Strict rate limiting: max 10 purchases/hour (user-configurable)
+Mandatory item whitelist before any auto-buy
+Dry-run mode to test strategies without spending a cent
+Full audit logs for every attempt (success, failure, reason)
+Auto-pause on abnormal behavior detection
+
+
+🛠️ Tech Stack (planned)
+LayerTechFrontendNext.js 14+ (App Router), TypeScript, Tailwind CSS, shadcn/uiBackendNext.js API Routes, Prisma, PostgreSQLJobs & QueuesBullMQ + RedisAuthNextAuth.jsBillingStripeLoggingPino (structured logs)APIsCSFloat API, Steam API, Skinport API, DMarket API, Buff163
+
+🔐 Security principles
+
+All API keys encrypted at rest (AES-256), never exposed client-side
+Rate limiting on every route
+Per-user isolated credentials
+Audit logs on all sensitive actions
+Strict TypeScript + Zod validation on all inputs and external API responses
+
+
+📂 Project Status
+🟡 Early stage — architecture & planning phase
+
+ Project concept & roadmap defined
+ Repository setup & stack configuration
+ Phase 1: CSFloat scanner MVP
+ Phase 2: Arbitrage engine
+ Phase 3: Buying bot
+
+
+🤝 Contributing / Collaborating
+I'm a beginner developer learning as I build this.
+If you're experienced with TypeScript, Next.js, marketplace APIs, or just find this project interesting:
+
+Open an Issue to share ideas or feedback
+Reach out directly via GitHub or drop a message
+
+All skill levels welcome — whether you want to contribute code, spot my mistakes, or just point me in the right direction. 🙏
+
+📄 License
+MIT — do what you want, just don't claim it's yours.
